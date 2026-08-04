@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vexmore City — Loja Oficial</title>
+<meta name="description" content="Loja oficial de Vexmore City. VIPs e veículos VIP para o servidor.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><img src="assets/logo.png" alt="Vexmore City"></a>
+    <nav class="nav-links">
+      <a href="#vitrine" class="active">Loja</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-spacer"></div>
+    <a href="#" class="nav-discord" id="discordLink" target="_blank" rel="noopener">
+      <span>Discord</span>
+    </a>
+    <button class="cart-btn" id="cartOpenBtn" aria-label="Abrir carrinho">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-count" id="cartCount" data-empty="true">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <img src="assets/logo.png" alt="Vexmore City" class="hero-logo">
+    <p class="hero-sub">Loja oficial do servidor. Garanta seu <strong>VIP</strong> e os <strong>veículos exclusivos</strong> das ruas de Vexmore.</p>
+    <div class="hero-ctas">
+      <a href="#vitrine" class="btn btn-primary">Ver loja</a>
+      <a href="#como-funciona" class="btn btn-ghost">Como funciona</a>
+    </div>
+  </div>
+</section>
+
+<!-- taglines pulled straight from the server art -->
+<div class="taglines">
+  <div>No <span>Justice</span> · No <span>Peace</span></div>
+  <div><span>Loyalty</span> Before Everything</div>
+</div>
+
+<!-- ============ CATEGORY FILTER ============ -->
+<div class="cat-strip">
+  <div class="cat-pills" id="catPills">
+    <button class="cat-pill active" data-cat="todos">Todos</button>
+    <!-- preenchido também via JS a partir de CATEGORIES, mas os fixos ficam aqui -->
+  </div>
+</div>
+
+<!-- ============ VITRINE ============ -->
+<main>
+  <section class="section" id="vitrine">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title"><span class="small">Vexmore City</span>Vitrine</h2>
+      </div>
+      <div id="gridWrap"></div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title"><span class="small">Passo a passo</span>Como funciona</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Escolha seu item</h3>
+          <p>Navegue pelos VIPs e veículos VIP disponíveis e escolha o que combina com você.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Finalize o pagamento</h3>
+          <p>Clique em comprar e conclua o pagamento com segurança na página de checkout.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Receba no jogo</h3>
+          <p>Após a confirmação, seu item é liberado automaticamente na sua conta dentro do servidor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contato">
+  <div class="container">
+    <div class="footer-top">
+      <a href="#top" class="footer-logo"><img src="assets/logo.png" alt="Vexmore City"></a>
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener" aria-label="Discord">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127c-.598.35-1.22.645-1.873.893a.076.076 0 0 0-.04.106c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.662a.06.06 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.419-2.157 2.419z"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.85 3.9 2.31 7.15 2.16 8.42 2.1 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07c-4.35.2-6.78 2.62-6.98 6.98C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Vexmore City. Todos os direitos reservados.</span>
+      <span>Loja não oficial hospedada pela comunidade — sujeita aos termos do provedor de pagamento.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrinho">
+  <div class="drawer-head">
+    <h3>Seu carrinho</h3>
+    <button class="drawer-close" id="drawerClose" aria-label="Fechar">&times;</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Total</span><span id="drawerTotal">R$ 0,00</span></div>
+    <p class="drawer-note">Cada item é comprado individualmente através do link de pagamento configurado pela loja. Clique em "Comprar" em cada item para finalizar.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
