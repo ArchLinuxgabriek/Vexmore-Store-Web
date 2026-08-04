@@ -4,22 +4,38 @@ Site estático (sem backend) para vender **VIPs** e **veículos VIP** do servido
 
 A loja começa **sem nenhum produto** de propósito — você adiciona os seus.
 
+## Páginas do site
+
+| Página | O que é |
+|---|---|
+| `index.html` | Loja — vitrine de VIPs e veículos |
+| `whitelist.html` | Formulário oficial de whitelist (embutido do Google Forms) |
+| `regras.html` | Livro de regras da cidade |
+
+As três já estão linkadas entre si pelo menu do topo.
+
 ---
 
 ## 1. Estrutura do projeto
 
 ```
 vexmore-store/
-├── index.html          → estrutura da página (não precisa mexer)
-├── css/style.css        → visual da loja (não precisa mexer)
+├── index.html          → loja (não precisa mexer)
+├── whitelist.html       → página de whitelist (não precisa mexer)
+├── regras.html           → livro de regras (não precisa mexer)
+├── css/style.css         → visual da loja e da whitelist (não precisa mexer)
 ├── js/
 │   ├── products.js      → 🟡 ARQUIVO QUE VOCÊ EDITA (produtos e categorias)
 │   └── app.js            → lógica da loja (carrinho, filtros — não precisa mexer)
 └── assets/
-    ├── logo.png          → sua logo (fundo transparente)
-    ├── hero-bg.png        → imagem de fundo da capa
+    ├── logo.png          → sua logo (fundo transparente, usada em todas as páginas)
+    ├── hero-bg.png        → imagem de fundo da capa da loja e da whitelist
+    ├── whitelist-banner.png → banner opcional para o tema do Google Forms
     └── produtos/          → 🟡 pasta pra você criar e colocar fotos dos produtos
 ```
+
+> `regras.html` é um arquivo à parte, com seu próprio CSS embutido — por isso o visual dele é levemente diferente da loja (mesma paleta âmbar, tipografia própria). Se quiser deixá-lo idêntico ao resto do site, é só pedir.
+
 
 ## 2. Como adicionar um produto
 
