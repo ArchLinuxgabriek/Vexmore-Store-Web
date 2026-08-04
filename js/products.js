@@ -47,6 +47,53 @@ const CATEGORIES = [
 ];
 
 const PRODUCTS = [
-  // A loja começa vazia. Adicione seus produtos aqui em cima,
-  // seguindo o modelo explicado no comentário acima.
+    {
+        id: "vip-bronze",              // único, sem espaços/acentos
+        categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+        nome: "VIP Bronze",
+        descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+        preco: 29.90,                // preço atual (em R$)
+        precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+        imagem: "assets/produtos/vip-ouro.png", // veja a seção IMAGENS abaixo
+        destaque: false,             // true = aparece na vitrine em destaque
+        tag: "",         // opcional: selo pequeno no canto do card
+        linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+        // ^ link do Mercado Pago, PIX, Stripe, PayPal.me, Tebex, etc.
+        //   é para ONDE o botão "Comprar" leva o comprador.
+        //   Deixe "" se ainda não tiver o link — o botão avisa o
+        //   cliente que a compra ainda não está disponível.
+    },
+    {
+        id: "Carro-kuruma",              // único, sem espaços/acentos
+        categoria: "veiculos",           // precisa existir em CATEGORIES (veja mais abaixo)
+        nome: "Kuruma",
+        descricao: "Carro esxclusivo.",
+        preco: 29.90,                // preço atual (em R$)
+        precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+        imagem: "assets/produtos/Carro-kuruma.png", // veja a seção IMAGENS abaixo
+        destaque: false,             // true = aparece na vitrine em destaque
+        tag: "",         // opcional: selo pequeno no canto do card
+        linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+        // ^ link do Mercado Pago, PIX, Stripe, PayPal.me, Tebex, etc.
+        //   é para ONDE o botão "Comprar" leva o comprador.
+        //   Deixe "" se ainda não tiver o link — o botão avisa o
+        //   cliente que a compra ainda não está disponível.
+    },
+    {
+        id: "Carro-Kanjo",              // único, sem espaços/acentos
+        categoria: "veiculos",           // precisa existir em CATEGORIES (veja mais abaixo)
+        nome: "Kanjo",
+        descricao: "Carro esxclusivo.",
+        preco: 29.90,                // preço atual (em R$)
+        precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+        imagem: "assets/produtos/Carro-Kanjo.png", // veja a seção IMAGENS abaixo
+        destaque: false,             // true = aparece na vitrine em destaque
+        tag: "",         // opcional: selo pequeno no canto do card
+        linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+        // ^ link do Mercado Pago, PIX, Stripe, PayPal.me, Tebex, etc.
+        //   é para ONDE o botão "Comprar" leva o comprador.
+        //   Deixe "" se ainda não tiver o link — o botão avisa o
+        //   cliente que a compra ainda não está disponível.
+    },
+
 ];
