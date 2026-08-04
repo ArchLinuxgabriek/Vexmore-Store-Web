@@ -47,6 +47,20 @@ const CATEGORIES = [
 ];
 
 const PRODUCTS = [
-  // A loja começa vazia. Adicione seus produtos aqui em cima,
-  // seguindo o modelo explicado no comentário acima.
+   {
+     id: "vip-ouro",              // único, sem espaços/acentos
+     categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+     nome: "VIP Ouro",
+     descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+     preco: 29.90,                // preço atual (em R$)
+     precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+     imagem: "assets/produtos/vip-ouro.png", // veja a seção IMAGENS abaixo
+     destaque: false,             // true = aparece na vitrine em destaque
+     tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
+     linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+     // ^ link do Mercado Pago, PIX, Stripe, PayPal.me, Tebex, etc.
+     //   é para ONDE o botão "Comprar" leva o comprador.
+     //   Deixe "" se ainda não tiver o link — o botão avisa o
+     //   cliente que a compra ainda não está disponível.
+   },
 ];
