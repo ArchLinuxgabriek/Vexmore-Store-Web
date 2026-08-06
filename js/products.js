@@ -66,7 +66,7 @@ const PRODUCTS = [
      descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
      preco: 29.90,                // preço atual (em R$)
      precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
-     imagem: "assets/produtos/vip-plata.png", // veja a seção IMAGENS abaixo
+     imagem: "assets/produtos/vip-prata.png", // veja a seção IMAGENS abaixo
      destaque: false,             // true = aparece na vitrine em destaque
      tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
      linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
