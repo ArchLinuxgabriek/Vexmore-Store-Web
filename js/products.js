@@ -48,6 +48,30 @@ const CATEGORIES = [
 
 const PRODUCTS = [
    {
+     id: "vip-bronze",              // único, sem espaços/acentos
+     categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+     nome: "VIP Bronze",
+     descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+     preco: 29.90,                // preço atual (em R$)
+     precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+     imagem: "assets/produtos/vip-bronze.png", // veja a seção IMAGENS abaixo
+     destaque: false,             // true = aparece na vitrine em destaque
+     tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
+     linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+   },
+   {
+     id: "vip-plata",              // único, sem espaços/acentos
+     categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+     nome: "VIP Plata",
+     descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+     preco: 29.90,                // preço atual (em R$)
+     precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+     imagem: "assets/produtos/vip-plata.png", // veja a seção IMAGENS abaixo
+     destaque: false,             // true = aparece na vitrine em destaque
+     tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
+     linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+   },
+   {
      id: "vip-ouro",              // único, sem espaços/acentos
      categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
      nome: "VIP Ouro",
@@ -58,9 +82,29 @@ const PRODUCTS = [
      destaque: false,             // true = aparece na vitrine em destaque
      tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
      linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
-     // ^ link do Mercado Pago, PIX, Stripe, PayPal.me, Tebex, etc.
-     //   é para ONDE o botão "Comprar" leva o comprador.
-     //   Deixe "" se ainda não tiver o link — o botão avisa o
-     //   cliente que a compra ainda não está disponível.
+   },
+   {
+     id: "vip-platina",              // único, sem espaços/acentos
+     categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+     nome: "VIP Platina",
+     descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+     preco: 29.90,                // preço atual (em R$)
+     precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+     imagem: "assets/produtos/vip-platina.png", // veja a seção IMAGENS abaixo
+     destaque: false,             // true = aparece na vitrine em destaque
+     tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
+     linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
+   },
+   {
+     id: "vip-diamante",              // único, sem espaços/acentos
+     categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
+     nome: "VIP Diamante",
+     descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
+     preco: 29.90,                // preço atual (em R$)
+     precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
+     imagem: "assets/produtos/vip-diamante.png", // veja a seção IMAGENS abaixo
+     destaque: false,             // true = aparece na vitrine em destaque
+     tag: "MAIS VENDIDO",         // opcional: selo pequeno no canto do card
+     linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
    },
 ];
