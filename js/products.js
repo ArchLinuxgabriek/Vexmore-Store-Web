@@ -60,9 +60,9 @@ const PRODUCTS = [
      linkPagamento: "https://link-do-seu-checkout.com/vip-ouro"
    },
    {
-     id: "vip-plata",              // único, sem espaços/acentos
+     id: "vip-prata",              // único, sem espaços/acentos
      categoria: "vips",           // precisa existir em CATEGORIES (veja mais abaixo)
-     nome: "VIP Plata",
+     nome: "VIP Prata",
      descricao: "Acesso a garagem extra, salário +20% e tag exclusiva.",
      preco: 29.90,                // preço atual (em R$)
      precoAntigo: null,           // opcional: preço "de" riscado, ex: 39.90
